@@ -1,0 +1,45 @@
+prompt_order = [
+  "username",
+  "directory",
+  "git_branch",
+  "git_status",
+  "golang",
+  "java",
+  "python",
+  "rust",
+  "aws",
+  "command_duration",
+  "line_break",
+  "character",
+]
+
+[username]
+style_root = "bold red"
+style_user = "bold yellow"
+show_always = false
+disabled = false
+
+[directory]
+truncation_length = 6
+truncate_to_repo = true
+prefix = "in "
+style = "bold cyan"
+disabled = false
+
+[git_branch]
+style = "bold purple"
+disabled = false
+
+[git_status]
+modified = "+-"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+
+[command_duration]
+min_time = 500
+prefix = "took "
+
+[line_break]
+disabled = false
