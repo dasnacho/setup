@@ -47,8 +47,6 @@ set splitright
 nmap <silent> <leader>Q :bd<CR>
 
 " coc stuff
-set updatetime=300
-
 if has('nvim')
   inoremap <silent><expr> <C-space> coc#refresh()
 else
