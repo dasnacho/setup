@@ -92,3 +92,6 @@ let g:blamer_date_format = '%Y-%m-%d %H:%M'
 
 " vim signify
 set updatetime=100
+
+" Go
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
